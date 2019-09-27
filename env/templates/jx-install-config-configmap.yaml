@@ -1,0 +1,34 @@
+apiVersion: v1
+data:
+  ca.crt: |
+    -----BEGIN CERTIFICATE-----
+    MIIDDDCCAfSgAwIBAgIRANGplTh7sKO/14EncSMCmrMwDQYJKoZIhvcNAQELBQAw
+    LzEtMCsGA1UEAxMkOWQ4MTJjNzMtZDZkYS00MzFhLWEzOTUtYWRhZTVmMjk2N2Ix
+    MB4XDTE5MDkyNjA1NTAwN1oXDTI0MDkyNDA2NTAwN1owLzEtMCsGA1UEAxMkOWQ4
+    MTJjNzMtZDZkYS00MzFhLWEzOTUtYWRhZTVmMjk2N2IxMIIBIjANBgkqhkiG9w0B
+    AQEFAAOCAQ8AMIIBCgKCAQEAtqDJx17SAyf8XSleJE2++ZWGsIJqOFNIn73JCDn1
+    UdsgBiZQAKgugG4toeR7PLUK77lioPVtbMZwjX11t+LYO6bxbRWixG2EQuyoX1wF
+    uMk8hJYbv1xOaRp7IEtutrPg6cr13nhfJNhiiaoerN4gSK6fmtJAfdGUhu8dOH+T
+    hZ1w/ADgKOQXV+XyjATGQBQSb2VgBy3wQl6i2xA8cWrUMG0uFjo9S17NN9xnpVWI
+    VQUsX35xbKY8XgDU5/DiZXYZIl/a9EXcv/u5VxqQFg5SoAwJO6UUOjiugtfEubQ7
+    8aV/AccdoZqLcnjOGJzbZdP73CYMBMR8EJLKUzNEqOg4xQIDAQABoyMwITAOBgNV
+    HQ8BAf8EBAMCAgQwDwYDVR0TAQH/BAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEA
+    UTLtbe4wu0l4JaBkyBvQ7YXvekEA67x/I3NVf8+ZJalqoDt0na7cIP+nXxagWg8k
+    wFuXpINPxJPymj1f29rsDlEwZntku5s3Tx+EuWKqvQ9bgNFoCaH7UPuZtex7lrWR
+    HQIpMkUfGXYQOdRIWi18Xi6oAKCfHGapZamPboLzjCws6UcK47Br20AhMksc2fFo
+    WV2JpwY8WSqWqnEiEbKtnn7rwvnNFiFcJJYZIMwHgxnJP4bLEtZj4cRKcQySwtu+
+    c4NBjPZcKEUkDd1NXu/EY4tJuoUNdcza+QCSUh8wG55dUxO6GE9uAD0knzs9a10j
+    wJQ3RIf88ZGE9PN9pPfI5g==
+    -----END CERTIFICATE-----
+  clusterName: lightning
+  jx-install-version: 2.0.721
+  kubeProvider: gke
+  projectID: silicon-synapse-254003
+  secretsLocation: vault
+  server: https://35.228.163.39
+  systemVaultName: jx-vault-lightning
+  zone: europe-north1-a
+kind: ConfigMap
+metadata:
+  creationTimestamp: null
+  name: jx-install-config
